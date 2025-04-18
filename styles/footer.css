@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  gap: 2.25rem;
+  flex-direction: column;
+  .questions {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+
+    .question {
+      strong {
+        font-size: var(--paragraph-medium);
+        font-family: var(--ff-roboto-flex);
+        line-height: 1.5;
+        color: var(--content-brand);
+      }
+      p {
+        color: var(--content-secondary);
+        font-size: var(--paragraph-small);
+        line-height: 1.5;
+      }
+    }
+  }
+}
