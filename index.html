@@ -22,14 +22,36 @@
       </div>
 
       <main>
-        <div>
+        <div class="header">
           <h2>Quero sortear:</h2>
           <p>
             Defina o intervalo e a quantidade de números, clique em "Sortear" e
             veja os resultados na tela. É rápido e fácil!
           </p>
         </div>
-        <form action=""></form>
+        <form action="">
+          <fieldset>
+            <div class="input-group">
+              <label for="">Números</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label for="">De</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label for="">Até</label>
+              <input type="text" />
+            </div>
+          </fieldset>
+          <div id="switch">
+            <div class="toggle"></div>
+            <p>Não repetir número</p>
+          </div>
+          <button class="btn">
+            Sortear <img src="assets/arrow-right.svg" alt="" />
+          </button>
+        </form>
       </main>
       <footer>
         <div class="questions">
