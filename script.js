@@ -4,6 +4,7 @@ const number = document.querySelector("#number");
 const start = document.querySelector("#start");
 const end = document.querySelector("#end");
 const form = document.querySelector("#form");
+const header = document.querySelector(".header");
 const regex = /\D+/g;
 // Função para formatar o valor inserido no input
 function formatNumber(input) {
@@ -41,5 +42,16 @@ end.addEventListener("input", () => {
 form.onsubmit = (e) => {
   e.preventDefault();
 
-  console.log(number.value, start.value, end.value);
+  function random(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  for (step = 0; step < number.value; step++) {
+    alert(random(start.value, end.value));
+  }
+
+  header.style.textAlign = "center";
+  header.style.textTransform = "uppercase";
+  header.firstElementChild.innerHTML = "Resultado do sorteio";
+  header.lastElementChild.innerHTML = "1° Resultado";
 };
